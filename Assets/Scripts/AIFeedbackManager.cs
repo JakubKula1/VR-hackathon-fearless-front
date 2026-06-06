@@ -94,3 +94,9 @@ public class GroqMessage
 {
     public string content;
 }
+
+[System.Serializable]
+public class Secrets
+{
+    public string groqApiKey;
+}
