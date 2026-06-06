@@ -27,5 +27,11 @@ public class SessionManager : MonoBehaviour
                 Debug.Log("ESPACE — Session arrêtée !");
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            FindObjectOfType<AIFeedbackManager>()?.RequestFeedback();
+            Debug.Log("Feedback IA demandé !");
+        }
     }
 }
