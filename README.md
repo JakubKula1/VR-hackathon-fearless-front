@@ -1,39 +1,39 @@
 # 🎤 Fearless Front VR
 
-**Utiliser la réalité virtuelle et l'IA pour répondre à un enjeu de santé : vaincre l'anxiété de prise de parole en public.**  
-*Projet développé dans le cadre du VR/AR Hackathon organisé par la Vidzeme University of Applied Sciences (Vidzemes Augstskola).*
+**Using Virtual Reality and AI to tackle a health challenge: overcoming public speaking anxiety.**  
+*Project developed during the VR/AR Hackathon organized by Vidzemes Augstskola (Vidzeme University of Applied Sciences).*
 
-## 📖 À propos du projet
+## 📖 About the Project
 
-La prise de parole en public est l'une des phobies et sources de stress les plus répandues. **Fearless Front VR** est une application immersive en réalité virtuelle conçue pour aider les utilisateurs à mieux gérer leur anxiété.
+Public speaking is one of the most common phobias and sources of stress. **Fearless Front VR** is an immersive virtual reality application designed to help users better manage their anxiety.
 
-Plongé via un casque **Meta Quest 2** dans une salle de classe virtuelle, l'utilisateur fait face à une audience dynamique et réaliste. L'objectif est de recréer des conditions progressives d'exposition pour apprivoiser le trac. En fin de session, une **IA de coaching** analyse les données de la simulation pour générer un retour personnalisé.
+Immersed via a **Meta Quest 2** headset into a virtual classroom, the user faces a dynamic and realistic audience. The goal is to recreate progressive exposure conditions to help them conquer stage fright. At the end of the session, an **AI coach** analyzes the simulation data to generate personalized feedback.
 
-## ✨ Fonctionnalités Clés & Architecture Technique
+## ✨ Key Features & Technical Architecture
 
-Développé sous **Unity 6**, le projet intègre plusieurs briques technologiques avancées :
+Developed under **Unity 6**, the project integrates several advanced technological layers:
 
-*   **Réactions dynamiques de la foule :** Un système de gestion d'animations aléatoires et asynchrones couplé à un suivi du regard (*Inverse Kinematics*) permet à l'audience de réagir en temps réel (applaudissements, murmures, écoute attentive).
-*   **Données biométriques :** Capture et suivi du rythme cardiaque en temps réel pour évaluer le niveau de stress de l'orateur.
-*   **IA de Coaching :** Intégration d'un modèle d'intelligence artificielle via **Groq** et **Llama 3.3** pour débriefer la performance de l'utilisateur.
-*   **Réalité Virtuelle :** Configuration **OpenXR** optimisée pour le Meta Quest 2.
+*   **Dynamic Crowd Reactions:** A lightweight system of randomized and asynchronous animations combined with gaze tracking (*Inverse Kinematics*) allows the audience to react in real-time (applause, murmurs, attentive listening).
+*   **Biometric Data:** Real-time heart rate capture and tracking to assess the speaker's stress level.
+*   **AI Coaching:** Integration of an artificial intelligence model via **Groq** and **Llama 3.3** to debrief the user's performance.
+*   **Virtual Reality:** **OpenXR** configuration optimized for the Meta Quest 2.
 
-## 🛠️ Stack Technique
+## 🛠️ Tech Stack
 
-*   **Moteur :** Unity 6 (OpenXR, XR Interaction Toolkit)
-*   **Langage :** C#
-*   **Intelligence Artificielle :** API Groq / Llama 3.3
-*   **Matériel cible :** Meta Quest 2
-*   **3D / Animation :** Formats FBX/GLTF, Rigging Humanoid (Mixamo)
+*   **Engine:** Unity 6 (OpenXR, XR Interaction Toolkit)
+*   **Language:** C#
+*   **Artificial Intelligence:** Groq API / Llama 3.3
+*   **Target Hardware:** Meta Quest 2
+*   **3D / Animation:** FBX/GLTF formats, Humanoid Rigging (Mixamo)
 
-## 🧠 Défis Techniques Relevés
+## 🧠 Technical Challenges Overcome
 
-1.  **Optimisation de la foule VR :** Centralisation de la logique d'animation via un gestionnaire C# pour éviter l'impact sur les performances du casque, tout en éliminant les bugs de "T-Poses" et de synchronisation des squelettes.
-2.  **Pipeline XR & Biofeedback :** Connexion fluide entre le matériel VR, le suivi physiologique (rythme cardiaque) et les services cloud d'IA.
-3.  **Immersion et Présence :** Résolution des problématiques d'importation 3D (textures, matériaux) pour garantir une esthétique propre et non-intrusive propice à la diminution du stress.
+1.  **VR Crowd Optimization:** Centralized the animation logic via a C# manager script to prevent performance hits on the headset while eliminating "T-Pose" bugs and skeleton synchronization issues.
+2.  **XR Pipeline & Biofeedback:** Seamless connection between VR hardware, physiological tracking (heart rate), and cloud AI services.
+3.  **Immersion & Presence:** Resolved 3D import issues (textures, materials) to ensure a clean, non-intrusive aesthetic conducive to stress reduction.
 
-## 🚀 Installation & Utilisation
+## 🚀 Installation & Usage
 
-1. Clonez ce dépôt :
+1. Clone this repository:
    ```bash
    git clone [https://github.com/JakubKula1/VR-hackathon-fearless-front.git](https://github.com/JakubKula1/VR-hackathon-fearless-front.git)
